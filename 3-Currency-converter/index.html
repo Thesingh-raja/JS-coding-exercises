@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Currency Converter</title>
+   </head>
+   <body>
+      <div class="container flex-box">
+         <div class="flex-box flex-column card-dim">
+            <h1 class="heading align-center">
+               Currency Converter
+            </h1>
+			<div class="error-box">
+				<span>Please provide Valid details</span>
+			</div>
+            <div class="box ">
+               <div class="flex-box flex-column box-div sp-evenly">
+                  <div class="flex-box-sp-btwn">
+                     <div class="flex-box">
+                        <div class="flex-box flex-column">
+                           <div>
+                              <span class="pad-bot">Enter From Currency</span>
+                           </div>
+                           <select class="from select selectOptions1">
+                              <option value="no">Select</option>
+                              <option value="USD">USD</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="flex-box flex-column">
+                           <div class="">
+                              <span class="pad-bot">Enter To Currency</span>
+                           </div>
+                           <select class="to select selectOptions2">
+                              <option value="no">Select</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="flex-box flex-column">
+                     <label class="pad-bot" for="amt">Amount to Convert :</label>
+                     <input type="text" class=" select search" placeholder="0">
+                  </div>
+                  <div>
+                     <!-- convert button -->
+                     <button class="convert" type="submit"> CONVERT </button>
+                  </div>
+               </div>
+            </div>
+			
+            <div class="result">
+               <!-- Display the converted amount -->
+               <h2>Converted Amount :
+                  <span class="finalValue"></span>
+               </h2>
+            </div>
+         </div>
+      </div>
+      <script defer src="script.js"></script>
+   </body>
+</html>
